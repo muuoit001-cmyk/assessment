@@ -4,7 +4,7 @@ An end-to-end Machine Learning pipeline for spot market freight rate prediction,
 
 ---
 
-## 📌 Executive Summary
+## Executive Summary
 
 This repository implements a production-grade machine learning solution for forecasting spot truckload freight rates (`posted_rate`). The modeling pipeline incorporates:
 - **Comprehensive data cleaning** addressing sign-inversion payload errors and missing cross-sectional features.
@@ -15,7 +15,7 @@ This repository implements a production-grade machine learning solution for fore
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 ├── data/
@@ -45,7 +45,7 @@ This repository implements a production-grade machine learning solution for fore
 
 ---
 
-## 🚀 Setup & Quickstart
+##  Setup & Quickstart
 
 ### 1. Environment Setup
 
@@ -111,7 +111,7 @@ python generate_report.py
 
 ---
 
-## 🔬 Data Quality Issues & Systematic Resolutions
+## Data Quality Issues & Systematic Resolutions
 
 | Data Quality Issue | Scope | Root Cause & Resolution |
 |---|---|---|
@@ -122,7 +122,7 @@ python generate_report.py
 
 ---
 
-## 📊 Validation Strategy & Benchmark Results
+## Validation Strategy & Benchmark Results
 
 ### Chronological Out-of-Time Split
 Freight spot rates are non-stationary time-series processes. Random shuffling produces severe look-ahead data leakage. We partitioned the development data chronologically:
@@ -144,7 +144,7 @@ Freight spot rates are non-stationary time-series processes. Random shuffling pr
 
 ---
 
-## 📈 December Prediction Chart Analysis
+## December Prediction Chart Analysis
 
 ![Candidate December Predicted Load Rate](scorer_results/candidate_december.png)
 
@@ -154,9 +154,3 @@ Freight spot rates are non-stationary time-series processes. Random shuffling pr
 
 ---
 
-## 📦 Submission Deliverables
-
-- [x] Accessible repository code, dependencies, and execution instructions.
-- [x] `validation_predictions.csv` with exactly 12,000 predictions (`load_id,predicted_rate`).
-- [x] Executive PDF Report: `freight_rate_prediction_report.pdf` with methodology, tables, and `candidate_december.png`.
-- [x] 2–3 Minute Loom Presentation Script: `LOOM_SCRIPT.md`.
